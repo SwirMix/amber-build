@@ -1,0 +1,25 @@
+server:
+  port: 8082
+spring:
+  datasource:
+    url: jdbc:postgresql://192.168.0.8:5432/perfcona?currentSchema=datapool
+    username: perfcona
+    password: perfcona
+    hikari:
+      data-source-properties: stringtype=unspecified
+    tomcat:
+      connection-properties: stringtype=unspecified
+management:
+  endpoints:
+    web:
+      exposure:
+        include: prometheus,health,info,metric
+app:
+  passwordSecret: passwd_jwt
+  jwtSecret: jwt
+  cacheManagerApp: cache-manager-app
+  datapoolApp: datapool-app
+  masterToken: master-token
+  metricsPusher: victoria-metrics
+  csvStorage: /home/ponchick/datapool-param-service/build/storage
+  ignite: 192.168.0.8:10800

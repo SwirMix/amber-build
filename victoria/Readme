@@ -1,0 +1,4 @@
+http://192.168.0.5:8428/ - VM. Указать внешний IP адрес в настройках датасорса
+http://localhost:8428/vmui/?#/ - Админка.
+http://localhost:8429/
+http://localhost:8428

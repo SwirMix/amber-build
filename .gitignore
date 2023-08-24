@@ -1,0 +1,4 @@
+./.idea/
+./work/
+./postgresql/pgdata/
+./postgresql/extension/
