@@ -76,4 +76,4 @@ java -Dspring.config.additional-location=/datapool-app.yaml -jar datapool-app-1.
 
 После успешного запуска вам доступна будет административная панель по адресу http://localhost:8082\
 Учетная запись для входа ponchick@gmail.com/1234567890
-![Image from alias](../img/dashboard.png)
+![Image from alias](https://github.com/SwirMix/amber-build/blob/main/img/dashboard.png)
