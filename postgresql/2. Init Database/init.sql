@@ -91,10 +91,12 @@ COMMIT;
 INSERT INTO datapool.project_permissions (project_id,user_id,"role") VALUES
 	 ('711bff9d-a873-4497-873f-fbfceb220071','d8e35c03-0c4e-435c-860b-361aaa6b81dc',0);
 COMMIT;
-
 create table datapool.caches (
     cache_name varchar(128),
     project_id varchar(128) references datapool.projects(id),
     summary varchar(500) default '',
+    title varchar(128) default '',
+    conditions varchar(600) default '',
+    content text default '',
     primary key (cache_name, project_id)
 );
